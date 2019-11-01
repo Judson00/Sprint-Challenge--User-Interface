@@ -47,60 +47,127 @@ table {
 	border-spacing: 0;
 }
 
+
+
+/* sets box-sizing for all elements */
 * {
     box-sizing: border-box;
+    border: 1px solid darkseagreen;
 }
 
+/* styling for all elements, and body elements */
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    border: 1px solid darkseagreen;
 }
 
+/* tyling for h1 - h6 */
 h1, h2, h3, h4, h5 {
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
+    border: 1px solid darkseagreen;
 }
 
+/* styling for all paragraphs */
 p {
     line-height: 1.4;
+    border: 1px solid darkseagreen;
 }
 
+/* styling for entire container */
 .container {
     width: 800px;
     margin: 0 auto;
+    border: 1px solid darkseagreen;
 }
 
+/* style for navigation box */
+.navigation{
+    width: 100%;
+    /* border: 1px solid darkseagreen;*/ /* used to vizualize boxes*/
+    display: flex;
+    justify-content: center;
+}
+
+/* styling for anchors in nav box */
+.nav-items{
+    width: 100%;
+    /* border: darkseagreen; */   /* used to visualize boxes*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2% 0 2% 0;
+}
+
+/* style for image box in navigation box */
+.nav-items img{
+    /* border: darkseagreen; */   /* used to visualize boxes*/
+    display: flex;
+    /* justify-content: flex-end; */
+}
+
+/* style for individual anchor tags in nav-items */
+.nav-items a{
+    /* border: darkseagreen; */   /* used to visualize boxes*/
+    color: lightslategrey;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.nav-items a:hover{
+    /* border: darkseagreen; */   /* used to visualize boxes*/
+    color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* styling for all of top-content */
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    border: 1px solid darkseagreen;
 }
 
+/* styling for text-container in top-content */
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+    border: 1px solid darkseagreen;
 }
 
+/* styling for middle-content */
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    border: 1px solid darkseagreen;
 }
 
+/* styling for h2's in middle-content */
 .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
+    border: 1px solid darkseagreen;
 }
 
+/* styling for boxes in middle-content */
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    border: 1px solid darkseagreen;
 }
 
+/* styling for individual boxes in middle-content */
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
@@ -110,27 +177,37 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid darkseagreen;
 }
 
+/* styling for .bottom-content */
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+    border: 1px solid darkseagreen;
 }
 
+/* styling for text-container in bottom-content */
 .bottom-content .text-container {
     padding-right: 4%;
+    border: 1px solid darkseagreen;
 }
 
+/* styling for last-chile of text-container */
 .bottom-content .text-container:last-child {
     padding-right: 0;
+    border: 1px solid darkseagreen;
 }
 
+/* styling for entire footer */
 footer {
     width: 100%;
     background: black;
+    border: 1px solid darkseagreen;
 }
 
+/* styling for nav in footer */
 footer nav {
     width: 60%;
     display: flex;
@@ -138,9 +215,12 @@ footer nav {
     align-items: center;
     padding: 20px 2%;
     font-size: 14px;
+    border: 1px solid darkseagreen;
 }
 
+/* styling for links in footer nav */
 footer nav a {
     color: white;
     text-decoration: none;
+    border: 1px solid darkseagreen;
 }
