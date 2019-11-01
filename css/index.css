@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+ 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,312 +16,277 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
-
-/* sets box-sizing for all elements */
+ 
 * {
-    /* /* border: 1px solid darkseagreen;   /* used to visualize boxes*/
     box-sizing: border-box;
 }
-
-/* styling for all elements, and body elements */
+ 
+ 
+ 
+ 
+ 
+/* Set styles that can be used across entire page here  */
 html, body {
-    /* border: 1px solid darkseagreen; */    /* used to visualize boxes*/ /* used to visualize boxes*/
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
-
-/* tyling for h1 - h6 */
+ 
+ 
+/* Put all the heads here that can be styled across page */
 h1, h2, h3, h4, h5 {
-    /* /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/    /* used to visualize boxes*/
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
-
-/* styling for all paragraphs */
+ 
+/* All paragraphs that can be styled across page here */
 p {
-    /* /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/    /* used to visualize boxes*/
     line-height: 1.4;
 }
-
-/* styling for entire container */
+ 
+/* Set the Container Width and Margin */
 .container {
-    /* /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/    /* used to visualize boxes*/
-    border: 1px solid black;
-    width: 50%;
-    margin:  1% 1% 1% 25%;
-    padding: 1% 5% 1% 2%;
+    width: 800px;
+    margin: 0 auto;
 }
-
-/* style for navigation box */
-.navigation{
-    width: 100%;
-    /* /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/ /* used to vizualize boxes*/
+ 
+/* Style the header (use flexbox if you can) */
+header {
     display: flex;
-    justify-content: center;
+    flex-flow: row, wrap;
+    width: 800px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
-
-/* styling for anchors in nav box */
-.nav-items{
-    /* /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/    /* used to visualize boxes*/
-    width: 100%;
+ 
+/* style the top img (again, best to use flexbox) */
+.header img {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 2% 0 2% 0;
+ 
 }
-
-/* style for image box in navigation box */
-.nav-items img{
-    /* /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/    /* used to visualize boxes*/
+ 
+/* Style the nav (This one was already done from previous submission) */
+nav {
     display: flex;
-    /* justify-content: flex-end; */
+    justify-content: space-around;
+    width: 600px;
 }
-
-/* style for individual anchor tags in nav-items */
-.nav-items a{
-    /* /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/    /* used to visualize boxes*/
-    color: lightslategrey;
-    text-align: center;
+ 
+ 
+ 
+/* Again, c/p this */
+.navigation a {
     display: flex;
-    align-items: center;
-}
-
-.nav-items a:hover{
-    /* /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/    /* used to visualize boxes*/
+    margin-top: 23px;
+    text-decoration-line: none;
     color: black;
-    text-align: center;
-    display: flex;
-    align-items: center;
 }
-
-.divider-image{
-    /* /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/    /* used to visualize boxes*/
-    padding: 1% 3% 1% 6%;
-    display: flex;
+ 
+/* set the image on top (from index.html) here, and give it a margin */
+.top-img {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-
-/* styling for all of top-content */
+ 
+/* Content spacing (Lot easier after you watch a couple vids again and look at the docs) */
 .top-content {
-    /* /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/    /* used to visualize boxes*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
-
-/* styling for text-container in top-content */
+ 
+ 
+/* Adjust width, padding for placement */
 .top-content .text-container {
-    /* /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/    /* used to visualize boxes*/
     width: 48%;
     padding: 0 1%;
-    padding: 2% 0 2% 4%;  
+    padding-bottom: 20px;  
 }
-
-/* styling for middle-content */
-.middle-content {
-    /* /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/    /* used to visualize boxes*/
+ 
+/* Get that dashed border in there */
+.middle {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
-
-/* styling for h2's in middle-content */
-.middle-content h2 {
-    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
+ 
+/* Get that header right */
+.middle h2 {
     padding: 0 2%;
     margin-bottom: 0;
 }
-
-/* styling for boxes in middle-content */
-.middle-content .boxes {
-    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
+ 
+/* Set up the box class so you can use flex-box correctly */
+.middle .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
-/* styling for individual boxes in middle-content */
-.middle-content .boxes .box1 {
-    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
+ 
+/* style the first box */
+.middle .boxes .box1 {
     width: 12.5%;
     height: 100px;
-    background: teal;
     margin: 20px 2.5%;
+    background-color: teal;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.middle-content .boxes .box2 {
+ 
+/* and the second */
+.middle .boxes .box2 {
     width: 12.5%;
     height: 100px;
-    background: gold;
     margin: 20px 2.5%;
+    background-color: gold;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
 }
-
-.middle-content .boxes .box3 {
+ 
+/* and the third */
+.middle .boxes .box3 {
     width: 12.5%;
     height: 100px;
-    background: cadetblue;
     margin: 20px 2.5%;
+    background-color: cadetblue;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
 }
-
-.middle-content .boxes .box4 {
+ 
+/* and the fourth */
+.middle .boxes .box4 {
     width: 12.5%;
     height: 100px;
-    background: coral;
     margin: 20px 2.5%;
+    background-color: coral;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
 }
-
-.middle-content .boxes .box5 {
+ 
+/* and the fifth */
+.middle .boxes .box5 {
     width: 12.5%;
     height: 100px;
-    background: crimson;
     margin: 20px 2.5%;
+    background-color: crimson;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
 }
-
-.middle-content .boxes .box6 {
+ 
+/* and the sixth */
+.middle .boxes .box6 {
     width: 12.5%;
     height: 100px;
-    background: forestgreen;
     margin: 20px 2.5%;
+    background-color: forestgreen;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
 }
-
-.middle-content .boxes .box7 {
+ 
+/* and the seventh */
+.middle .boxes .box7 {
     width: 12.5%;
     height: 100px;
-    background: darkorchid;
     margin: 20px 2.5%;
+    background-color: darkorchid;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
 }
-
-.middle-content .boxes .box8 {
+ 
+/* and the eighth */
+.middle .boxes .box8 {
     width: 12.5%;
     height: 100px;
-    background: hotpink;
     margin: 20px 2.5%;
+    background-color: hotpink;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
 }
-
-.middle-content .boxes .box9 {
+ 
+/* and the ninth */
+.middle .boxes .box9 {
     width: 12.5%;
     height: 100px;
-    background: indigo;
     margin: 20px 2.5%;
+    color: white;
+    background-color: indigo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+/* and the tenth (then research a better way to do this) */
+.middle .boxes .box10 {
+    width: 12.5%;
+    height: 100px;
+    margin: 20px 2.5%;
+    background-color: dodgerblue;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
 }
-
-.middle-content .boxes .box10 {
-    width: 12.5%;
-    height: 100px;
-    background: dodgerblue;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
-}
-
-/* styling for .bottom-content */
+ 
+/* content of the bottom here */
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
-    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
 }
-
-/* styling for text-container in bottom-content */
+ 
+/* bottom text-container */
 .bottom-content .text-container {
     padding-right: 4%;
-    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
 }
-
-/* styling for last-chile of text-container */
+ 
+/* last-child of the bottom text container */
 .bottom-content .text-container:last-child {
     padding-right: 0;
-    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
 }
-
-/* styling for entire footer */
+ 
+/* footer here */
 footer {
     width: 100%;
     background: black;
-    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
+    margin-bottom: 20px;
 }
-
-/* styling for nav in footer */
+ 
+/* footer nav here */
 footer nav {
     width: 60%;
     display: flex;
@@ -329,34 +294,96 @@ footer nav {
     align-items: center;
     padding: 20px 2%;
     font-size: 14px;
-    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
 }
-
-/* styling for links in footer nav */
+ 
+/* anchors on the footer nav here */
 footer nav a {
     color: white;
     text-decoration: none;
-    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
 }
-
-
-
-
-.about{
-    display:flex;
-    justify-content: flex-start;  
-    ; 
+ 
+/* nav styled automatically */
+ 
+/* about section image margin */
+.about-img {
+    margin-bottom: 20px;
 }
-
-.about h2{
+ 
+/* about intro here */
+.about-introduction {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px dashed black;
+}
+ 
+/* middle box here */
+.about-middle {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding: 2% 1% 1% 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ 
+/* middle header here */
+.about-middle h2 {
+    margin-top: 10px;
+}
+ 
+/* middle paragraphs here */
+.about-middle p {
+    width: 400px;
+    margin: 12px 0 12px 0;
+}
+ 
+/* middle buttons get styled here */
+.about-middle button {
+    width: 125px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+ 
+/* strategy style here */
+.strategy {
+    border-bottom: 1px dashed black;
+    width: 372px;
+    padding-bottom: 10px;
+}
+ 
+/* how style here */
+.how {
+    border-bottom: 1px dashed black;
+    width: 372px;
+}
+ 
+/* places style here */
+.places {
+    border-bottom: 1px dashed black;
+    margin-top: 50px;
+    width: 372px;
+    padding-bottom: 10px;
+}
+ 
+/* collaboration style here */
+.collaboration {
+    border-bottom: 1px dashed black;
+    margin-top: 50px;
+    width: 372px;
+}
+ 
+/* last style! this one was tricky, couldn't get flex-box to work, so I went with block instead */
+.about-bottom {
+    display: block;
+}
+ 
+/* set margin of last header */
+.about-bottom h2 {
+    margin-top: 30px;
+}
+ 
+/* Set margin of last paragraph */
+.about-bottom p {
+    margin-bottom: 40px;
 }
 
-.about p{
-    display: flex;
-    justify-content: flex-start;
-    padding: 8% 0 10% 0; 
-}
