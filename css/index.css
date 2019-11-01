@@ -362,12 +362,14 @@ button{
 .about p{
     display: flex;
     justify-content: flex-start;
-    padding: 8% 0 10% 0; 
+    padding: 8% 0 4% 0; 
+    border-bottom: 2px dotted black;
 }
 
 .t-column{
     display: flex;
     flex-direction: row;
+    padding-top: 3%;
 }
 
 .t-column h2{
@@ -375,12 +377,13 @@ button{
 }
 
 .t-column p{
-    padding-bottom: 3%;
+    padding-bottom: 4%;
 }
 
 img.about{
     height: 55%;
     display: flex;
+    padding-top: 12%;
 }
 
 .b-column{
@@ -399,4 +402,6 @@ img.about{
 img.places{
     height: 55%;
     display: flex;
+    border-top: 1px dotted black;
+    padding-top: 12%;
 }
