@@ -327,8 +327,9 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
+    padding: 3% 3% 3% 3%;
     font-size: 14px;
+    margin-top: 3%;
     /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
 }
 
@@ -353,10 +354,13 @@ button{
     
 }
 
+div.divider-image img.jumbo{
+    padding: 0% 5% 4% 0%;
+}
+
 .about h2{
-    display: flex;
+
     width: 0;
-    padding: 2%;
 }
 
 .about p{
@@ -364,6 +368,8 @@ button{
     justify-content: flex-start;
     padding: 8% 0 4% 0; 
     border-bottom: 2px dotted black;
+    margin-left:6%;
+    margin-right: 6%;
 }
 
 .t-column{
@@ -404,4 +410,8 @@ img.places{
     display: flex;
     border-top: 1px dotted black;
     padding-top: 12%;
+}
+
+.bottom-content2 p{
+    padding-bottom:4%;
 }
