@@ -51,50 +51,52 @@ table {
 
 /* sets box-sizing for all elements */
 * {
+    /* /* border: 1px solid darkseagreen;   /* used to visualize boxes*/
     box-sizing: border-box;
-    border: 1px solid darkseagreen;
 }
 
 /* styling for all elements, and body elements */
 html, body {
+    /* border: 1px solid darkseagreen; */    /* used to visualize boxes*/ /* used to visualize boxes*/
     height: 100%;
     font-family: 'Roboto', sans-serif;
-    border: 1px solid darkseagreen;
 }
 
 /* tyling for h1 - h6 */
 h1, h2, h3, h4, h5 {
+    /* /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/    /* used to visualize boxes*/
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
-    border: 1px solid darkseagreen;
 }
 
 /* styling for all paragraphs */
 p {
+    /* /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/    /* used to visualize boxes*/
     line-height: 1.4;
-    border: 1px solid darkseagreen;
 }
 
 /* styling for entire container */
 .container {
-    width: 800px;
-    margin: 0 auto;
-    border: 1px solid darkseagreen;
+    /* /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/    /* used to visualize boxes*/
+    border: 1px solid black;
+    width: 50%;
+    margin:  1% 1% 1% 25%;
+    padding: 1% 5% 1% 2%;
 }
 
 /* style for navigation box */
 .navigation{
     width: 100%;
-    /* border: 1px solid darkseagreen;*/ /* used to vizualize boxes*/
+    /* /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/ /* used to vizualize boxes*/
     display: flex;
     justify-content: center;
 }
 
 /* styling for anchors in nav box */
 .nav-items{
+    /* /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/    /* used to visualize boxes*/
     width: 100%;
-    /* border: darkseagreen; */   /* used to visualize boxes*/
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -103,14 +105,14 @@ p {
 
 /* style for image box in navigation box */
 .nav-items img{
-    /* border: darkseagreen; */   /* used to visualize boxes*/
+    /* /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/    /* used to visualize boxes*/
     display: flex;
     /* justify-content: flex-end; */
 }
 
 /* style for individual anchor tags in nav-items */
 .nav-items a{
-    /* border: darkseagreen; */   /* used to visualize boxes*/
+    /* /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/    /* used to visualize boxes*/
     color: lightslategrey;
     text-align: center;
     display: flex;
@@ -118,7 +120,7 @@ p {
 }
 
 .nav-items a:hover{
-    /* border: darkseagreen; */   /* used to visualize boxes*/
+    /* /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/    /* used to visualize boxes*/
     color: black;
     text-align: center;
     display: flex;
@@ -126,63 +128,170 @@ p {
 }
 
 .divider-image{
-    /* border: darkseagreen; */   /* used to visualize boxes*/
-    padding: 1% 0 1% 0;
+    /* /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/    /* used to visualize boxes*/
+    padding: 1% 3% 1% 6%;
     display: flex;
-
 }
 
 /* styling for all of top-content */
 .top-content {
+    /* /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/    /* used to visualize boxes*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
-    /* border: darkseagreen; */   /* used to visualize boxes*/
 }
 
 /* styling for text-container in top-content */
 .top-content .text-container {
+    /* /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/    /* used to visualize boxes*/
     width: 48%;
     padding: 0 1%;
-    padding: 2%;  
-   /* border: darkseagreen; */   /* used to visualize boxes*/
+    padding: 2% 0 2% 4%;  
 }
 
 /* styling for middle-content */
 .middle-content {
+    /* /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/    /* used to visualize boxes*/
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
-    border: 1px solid darkseagreen;
 }
 
 /* styling for h2's in middle-content */
 .middle-content h2 {
+    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
     padding: 0 2%;
     margin-bottom: 0;
-    border: 1px solid darkseagreen;
 }
 
 /* styling for boxes in middle-content */
 .middle-content .boxes {
+    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    border: 1px solid darkseagreen;
 }
 
 /* styling for individual boxes in middle-content */
-.middle-content .boxes .box {
+.middle-content .boxes .box1 {
+    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
     width: 12.5%;
     height: 100px;
-    background: black;
+    background: teal;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid darkseagreen;
+}
+
+.middle-content .boxes .box2 {
+    width: 12.5%;
+    height: 100px;
+    background: gold;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
+}
+
+.middle-content .boxes .box3 {
+    width: 12.5%;
+    height: 100px;
+    background: cadetblue;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
+}
+
+.middle-content .boxes .box4 {
+    width: 12.5%;
+    height: 100px;
+    background: coral;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
+}
+
+.middle-content .boxes .box5 {
+    width: 12.5%;
+    height: 100px;
+    background: crimson;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
+}
+
+.middle-content .boxes .box6 {
+    width: 12.5%;
+    height: 100px;
+    background: forestgreen;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
+}
+
+.middle-content .boxes .box7 {
+    width: 12.5%;
+    height: 100px;
+    background: darkorchid;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
+}
+
+.middle-content .boxes .box8 {
+    width: 12.5%;
+    height: 100px;
+    background: hotpink;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
+}
+
+.middle-content .boxes .box9 {
+    width: 12.5%;
+    height: 100px;
+    background: indigo;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
+}
+
+.middle-content .boxes .box10 {
+    width: 12.5%;
+    height: 100px;
+    background: dodgerblue;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
 }
 
 /* styling for .bottom-content */
@@ -190,26 +299,26 @@ p {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
-    border: 1px solid darkseagreen;
+    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
 }
 
 /* styling for text-container in bottom-content */
 .bottom-content .text-container {
     padding-right: 4%;
-    border: 1px solid darkseagreen;
+    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
 }
 
 /* styling for last-chile of text-container */
 .bottom-content .text-container:last-child {
     padding-right: 0;
-    border: 1px solid darkseagreen;
+    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
 }
 
 /* styling for entire footer */
 footer {
     width: 100%;
     background: black;
-    border: 1px solid darkseagreen;
+    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
 }
 
 /* styling for nav in footer */
@@ -220,12 +329,12 @@ footer nav {
     align-items: center;
     padding: 20px 2%;
     font-size: 14px;
-    border: 1px solid darkseagreen;
+    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
 }
 
 /* styling for links in footer nav */
 footer nav a {
     color: white;
     text-decoration: none;
-    border: 1px solid darkseagreen;
+    /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
 }
