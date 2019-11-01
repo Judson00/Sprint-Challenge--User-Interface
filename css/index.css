@@ -338,3 +338,25 @@ footer nav a {
     text-decoration: none;
     /* border: 1px solid darkseagreen; */   /* used to visualize boxes*/
 }
+
+
+
+
+.about{
+    display:flex;
+    justify-content: flex-start;  
+    ; 
+}
+
+.about h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 2% 1% 1% 0;
+}
+
+.about p{
+    display: flex;
+    justify-content: flex-start;
+    padding: 8% 0 10% 0; 
+}
